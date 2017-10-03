@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="./public/style.css"></link>
+    <script src="./public/bundle.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-item">
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="#">About</a>
+        </div>
+        <div class="nav-item">
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="map">
+      <div id="markers">
+          <div class="marker-label">
+            <h3>Hotels</h3>
+            <div class="marker-selector">
+              <select name='Hotels'>
+                <option value='hotel1'>Hotel 1</option>
+                <option value='hotel2'>Hotel 2</option>
+                <option value='hotel3'>Hotel 3</option>
+              </select>
+              <button class='clear'>X</button>
+            </div>
+          </div>
+          <div class="marker-label">
+            <h3>Restaurants</h3>
+            <div class="marker-selector">
+                <select name='Restaurants'>
+                  <option value='restaurant1'>Restaurant 1</option>
+                  <option value='restaurant2'>Restaurant 2</option>
+                  <option value='restaurant3'>Restaurant 3</option>
+                </select>
+                <button class='clear'>X</button>
+              </div>
+            <div class="marker-selector"></div>
+          </div>
+          <div class="marker-label">
+            <h3>Things To Do</h3>
+            <div class="marker-selector">
+                <select name='Things To Do'>
+                  <option value='activity1'>Activity 1</option>
+                  <option value='activity2'>Activity 2</option>
+                  <option value='activity3'>Activity 3</option>
+                </select>
+                <button class='clear'>X</button>
+              </div>
+            <div class="marker-selector"></div>
+          </div>
+        </div>
+        <div id="itinerary"><h2>Itinerary</h2>
+            <div class="itinerary-label">
+                <h3>My Hotel</h3>
+                <div class="itinerary-selector">
+                  <ul>
+                    <li>Hotel 1<button class='clear'>X</button></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="itinerary-label">
+                <h3>My Restaurants</h3>
+                <div class="itinerary-selector">
+                    <ul>
+                        <li>Restaurant 1<button class='clear'>X</button></li>
+                      </ul>
+                  </div>
+                <div class="itinerary-selector"></div>
+              </div>
+              <div class="itinerary-label">
+                <h3>My Activities</h3>
+                <div class="itinerary-selector">
+                    <ul>
+                        <li>Activity 1<button class='clear'>X</button></li>
+                      </ul>
+                  </div>
+                <div class="itinerary-selector"></div>
+              </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>

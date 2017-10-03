@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #C1B5AD;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  margin: 0 4em;
+  padding: 10px;
+  width: calc(100vw - 8em);
+  color: #fff;
+  background-color: rgba(31, 81, 219, 0.7);
+  border-radius: 0 0 1em 1em;
+  z-index: 2;
+  transform: translateY(-2.3em);
+  transition: transform 0.5s;
+  justify-content: flex-end;
+  border: .1em solid white;
+  border-top: 0px;
+}
+
+header:hover {
+  transform: translateY(0em);
+}
+
+header nav {
+  display: flex;
+}
+
+.nav-item {
+  height: 1.5em;
+  margin: 0 1.5em 0 0;
+}
+
+.nav-item a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: color 1s, background-color 0.5s;
+}
+.nav-item a:hover {
+  color: #202b47;
+  background-color: #fff;
+  box-shadow: #d3d3d3;
+}
+
+#map {
+  height: 100vh;
+  width: 100vw;
+}
+
+#markers {
+  position: absolute;
+  background-color: rgba(82, 160, 71, 0.5);
+  top: 10vh;
+  right: -40px;
+  z-index: 5;
+  height: 180px;
+  border-radius: 1em 0 0 1em;
+  width: 240px;
+  transform: translateX(190px);
+  transition: transform 0.5s;
+  border: .1em solid white;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#markers:hover {
+  transform: translateX(0px);
+}
+
+.marker-label {
+  padding-left: 1em;
+  width: 15em;
+}
+
+#itinerary {
+  position: fixed;
+  background-color: rgba(178, 190, 70, 0.5);
+  flex-basis: 20%;
+  top: 40vh;
+  right: -40px;
+  z-index: 5;
+  height: 250px;
+  border-radius: 1em 0 0 1em;
+  width: 240px;
+  transform: translateX(190px);
+  transition: transform 0.5s;
+  border: .1em solid white;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#itinerary:hover {
+  transform: translateX(0px);
+}
+
+select {
+  width: 10em;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+}
+
+.clear {
+  /* background-color: rgba(211, 111, 29, 0.75) */
+}
+
+.itinerary-label {
+  padding-left: 1em;
+  width: 15em;
+}
+
+li {
+  color: #3A3A3A;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #3A3A3A;;
+  text-decoration: none;
+  margin: 0 0 -5px 25px;
+  padding: 0;
+}
